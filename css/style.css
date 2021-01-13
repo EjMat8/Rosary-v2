@@ -9,12 +9,10 @@ dark:#1c6a9e
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-family: "Nanum Myeongjo", serif;
@@ -22,91 +20,68 @@ body {
   line-height: 1.5;
   color: #777777;
   box-sizing: border-box;
-  padding: 3rem;
-}
+  padding: 3rem; }
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0.3),
-      rgba(206, 206, 206, 0.8)
-    ),
-    url(../img/rosary_background.jpg);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(206, 206, 206, 0.8)), url(../img/rosary_background.jpg);
   background-size: cover;
   background-position: right;
-  position: relative;
-}
-.header__logo-box {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-}
-.header__logo {
-  height: 15rem;
-  animation: appear 2s 1s;
-  animation-fill-mode: backwards;
-}
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: max-content;
-}
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem; }
+  .header__logo {
+    height: 15rem;
+    animation: appear 2s 1s;
+    animation-fill-mode: backwards; }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: max-content; }
 
 .heading-primary {
   color: #303030;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 2rem;
-}
-.heading-primary--main {
-  font-weight: 400;
-  display: block;
-  font-size: 8rem;
-  animation: moveInLeft 1.2s ease-out;
-}
-.heading-primary--sub {
-  display: block;
-  font-size: 3rem;
-  animation: moveInRight 1.2s ease-out;
-}
+  margin-bottom: 2rem; }
+  .heading-primary--main {
+    font-weight: 400;
+    display: block;
+    font-size: 8rem;
+    animation: moveInLeft 1.2s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 3rem;
+    animation: moveInRight 1.2s ease-out; }
 
 @keyframes appear {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
-  }
+    transform: translateX(10rem); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem);
-  }
+    transform: translateX(-10rem); }
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
+    transform: translateX(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 3.5rem;
@@ -114,33 +89,27 @@ body {
   border-radius: 10rem;
   font-size: 1.6rem;
   transition: all 0.2s;
-  position: relative;
-}
+  position: relative; }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-}
-.btn:hover::after {
-  background-color: #fff;
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  .btn:hover::after {
+    background-color: #fff;
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-}
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
 .btn--clear {
   border: 0.1rem #303030 solid;
   color: #303030;
   background-color: transparent;
-  transition: all 0.2s;
-}
-.btn--clear:hover {
-  background-color: rgba(255, 255, 255, 0.336);
-}
+  transition: all 0.2s; }
+  .btn--clear:hover {
+    background-color: rgba(255, 255, 255, 0.336); }
 
 .btn::after {
   content: "";
@@ -152,10 +121,8 @@ body {
   left: 0;
   border-radius: 10rem;
   z-index: -1;
-  transition: all 0.4s;
-}
+  transition: all 0.4s; }
 
 .btn--animate {
   animation: appear 2s 1s;
-  animation-fill-mode: backwards;
-}
+  animation-fill-mode: backwards; }

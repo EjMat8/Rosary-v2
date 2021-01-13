@@ -1,0 +1,168 @@
+/*
+light:#7cbde8
+baseColor: #3498db
+dark:#1c6a9e
+
+*/
+$color-grey: #777777;
+$color-white: #fff;
+$color-dark-white: #cecece;
+$color-black: #000;
+$color-subtle-black: #303030;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $color-grey;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to left,
+      rgba($color-white, 0.3),
+      rgba($color-dark-white, 0.8)
+    ),
+    url(../img/rosary_background.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  &__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+  }
+  &__logo {
+    height: 15rem;
+    animation: appear 2s 1s;
+    animation-fill-mode: backwards;
+  }
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: max-content;
+  }
+}
+
+.heading-primary {
+  color: $color-subtle-black;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+  &--main {
+    font-weight: 400;
+    display: block;
+    font-size: 8rem;
+    animation: moveInLeft 1.2s ease-out;
+  }
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    animation: moveInRight 1.2s ease-out;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+    &::after {
+      background-color: $color-white;
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.3);
+  }
+
+  &--clear {
+    border: 0.1rem $color-subtle-black solid;
+    color: $color-subtle-black;
+    background-color: transparent;
+    transition: all 0.2s;
+    &:hover {
+      background-color: rgba($color-white, 0.336);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animate {
+    animation: appear 2s 1s;
+    animation-fill-mode: backwards;
+  }
+}

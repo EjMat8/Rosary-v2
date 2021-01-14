@@ -41,8 +41,7 @@ body {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    width: max-content; }
+    text-align: center; }
 
 .heading-primary {
   color: #303030;
@@ -52,7 +51,7 @@ body {
   .heading-primary--main {
     font-weight: 400;
     display: block;
-    font-size: 8rem;
+    font-size: 7.3rem;
     animation: moveInLeft 1.2s ease-out; }
   .heading-primary--sub {
     display: block;

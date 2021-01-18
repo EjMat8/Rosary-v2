@@ -1,0 +1,30 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-white, 0.6),
+      rgba($color-primary-dark, 0.3)
+    ),
+    url(../img/rosary_background.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+  }
+  &__logo {
+    height: 15rem;
+    animation: appear 2s 1s;
+    animation-fill-mode: backwards;
+  }
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

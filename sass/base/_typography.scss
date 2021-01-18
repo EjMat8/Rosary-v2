@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-grey;
+}
+
+.heading-primary {
+  color: $color-grey-dark-3;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+  &--main {
+    font-weight: 100;
+    display: block;
+    font-size: 7.3rem;
+    animation: moveInLeft 1.2s ease-out;
+  }
+  &--sub {
+    font-weight: 300;
+    display: block;
+    font-size: 3rem;
+    animation: moveInRight 1.2s ease-out;
+  }
+}

@@ -4,60 +4,6 @@ baseColor: #3498db
 dark:#1c6a9e
 
 */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #777777;
-  box-sizing: border-box;
-  padding: 3rem; }
-
-.header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(6, 206, 250, 0.3)), url(../img/rosary_background.jpg);
-  background-size: cover;
-  background-position: right;
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 5rem;
-    left: 5rem; }
-  .header__logo {
-    height: 15rem;
-    animation: appear 2s 1s;
-    animation-fill-mode: backwards; }
-  .header__text-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-.heading-primary {
-  color: #333;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 2rem; }
-  .heading-primary--main {
-    font-weight: 400;
-    display: block;
-    font-size: 7.3rem;
-    animation: moveInLeft 1.2s ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 3rem;
-    animation: moveInRight 1.2s ease-out; }
-
 @keyframes appear {
   0% {
     opacity: 0; }
@@ -79,6 +25,42 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+body {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #777777; }
+
+.heading-primary {
+  color: #333;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 2rem; }
+  .heading-primary--main {
+    font-weight: 100;
+    display: block;
+    font-size: 7.3rem;
+    animation: moveInLeft 1.2s ease-out; }
+  .heading-primary--sub {
+    font-weight: 300;
+    display: block;
+    font-size: 3rem;
+    animation: moveInRight 1.2s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -136,8 +118,7 @@ body {
     clear: both;
     display: table; }
   .row [class^="col-"] {
-    float: left;
-    background-color: orange; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -152,3 +133,24 @@ body {
     width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 *6rem); }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(6, 206, 250, 0.3)), url(../img/rosary_background.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem; }
+  .header__logo {
+    height: 15rem;
+    animation: appear 2s 1s;
+    animation-fill-mode: backwards; }
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

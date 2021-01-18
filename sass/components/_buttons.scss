@@ -27,8 +27,8 @@
   }
 
   &--clear {
-    border: 0.1rem $color-subtle-black solid;
-    color: $color-subtle-black;
+    border: 0.1rem $color-primary solid;
+    color: $color-primary;
     background-color: transparent;
     transition: all 0.2s;
     &:hover {

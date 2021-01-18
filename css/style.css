@@ -47,12 +47,12 @@ body {
   color: #777777; }
 
 .heading-primary {
-  color: #333;
+  color: #5c2610;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 2rem; }
   .heading-primary--main {
-    font-weight: 100;
+    font-weight: 400;
     display: block;
     font-size: 7.3rem;
     animation: moveInLeft 1.2s ease-out; }
@@ -61,6 +61,28 @@ body {
     display: block;
     font-size: 3rem;
     animation: moveInRight 1.2s ease-out; }
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 4rem;
+  text-transform: uppercase;
+  word-spacing: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  background-image: linear-gradient(to right, #69430d, #690d0d);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    transform: translateY(-4px) scale(1.05);
+    text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -85,8 +107,8 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); }
 
 .btn--clear {
-  border: 0.1rem #303030 solid;
-  color: #303030;
+  border: 0.1rem #5c2610 solid;
+  color: #5c2610;
   background-color: transparent;
   transition: all 0.2s; }
   .btn--clear:hover {
@@ -107,6 +129,23 @@ body {
 .btn--animate {
   animation: appear 2s 1s;
   animation-fill-mode: backwards; }
+
+.prayer-cont {
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid #5c2610;
+  border-radius: 5px;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .prayer-cont__icon {
+    font-size: 10rem;
+    color: #5c2610;
+    display: block; }
+  .prayer-cont__text {
+    padding: 1rem 5rem 8rem 5rem;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.9;
+    word-spacing: 1px; }
 
 .row {
   max-width: 114rem;
@@ -136,21 +175,17 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(6, 206, 250, 0.3)), url(../img/rosary_background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(0, 168, 146, 0.3)), url(../img/rosary_background.jpg);
   background-size: cover;
   background-position: right;
   position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 5rem;
-    left: 5rem; }
-  .header__logo {
-    height: 15rem;
-    animation: appear 2s 1s;
-    animation-fill-mode: backwards; }
   .header__text-box {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-creed {
+  padding: 15rem 0;
+  background-color: #e8f5fd; }

@@ -1,9 +1,12 @@
 .prayer-cont {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
+  text-align: center;
+
   border: 3px solid $color-primary;
   border-radius: 5px;
   box-shadow: 0rem 0.5rem 1rem rgba($color-black, 0.2);
+  padding: 3rem;
 
   &__icon {
     font-size: 10rem;
@@ -12,8 +15,7 @@
   }
 
   &__text {
-    padding: 1rem 5rem 8rem 5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: $color-grey-dark-3;
     line-height: 1.9;
     word-spacing: 1px;

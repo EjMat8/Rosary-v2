@@ -24,7 +24,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(206, 206, 206, 0.8)), url(../img/rosary_background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(6, 206, 250, 0.3)), url(../img/rosary_background.jpg);
   background-size: cover;
   background-position: right;
   position: relative; }
@@ -44,7 +44,7 @@ body {
     text-align: center; }
 
 .heading-primary {
-  color: #303030;
+  color: #333;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 2rem; }
@@ -125,3 +125,30 @@ body {
 .btn--animate {
   animation: appear 2s 1s;
   animation-fill-mode: backwards; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row [class^="col-"] {
+    float: left;
+    background-color: orange; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 *6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 *6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 *6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 *6rem); }

@@ -11,12 +11,18 @@ $color-dark-white: #cecece;
 $color-black: #000;
 $color-subtle-black: #303030;
 
-$color-primary-light: #69430d;
+$color-primary-light: #cb683d;
 $color-primary: #5c2610;
-$color-primary-dark: #690d0d;
+$color-primary-dark: #803e22;
 
 $color-primary-complement: #00a892;
 
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+$gradient-default: linear-gradient(
+  to right bottom,
+  rgba($color-white, 0.7),
+  rgba($color-primary-complement, 0.4)
+);

@@ -35,7 +35,11 @@
     }
     &--back {
       transform: rotateY(180deg);
-      background-image: linear-gradient(to right bottom, #cb683d, #803e22);
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
     }
   }
   &:hover &__side--front {
@@ -78,7 +82,7 @@
 
   &__mystery-title {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 400;
     color: $color-white;
     text-transform: uppercase;
     margin-bottom: 8rem;

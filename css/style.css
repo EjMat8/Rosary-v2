@@ -69,7 +69,7 @@ body {
   word-spacing: 0.8rem;
   letter-spacing: 2px;
   font-weight: 700;
-  background-image: linear-gradient(to right, #69430d, #690d0d);
+  background-image: linear-gradient(to right, #cb683d, #803e22);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -102,6 +102,30 @@ body {
 
 .u-width-max {
   width: 100% !important; }
+
+.angel-pray {
+  width: 90%;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(0, 168, 146, 0.4));
+  border-radius: 3px;
+  box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; }
+  .angel-pray__image-box {
+    height: 50rem; }
+  .angel-pray__image {
+    width: 100%; }
+  .angel-pray__text-box {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.7rem 0; }
+  .angel-pray__paragraph {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.8;
+    font-weight: 700; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -226,7 +250,7 @@ body {
     transform: translate(-50%, -50%); }
   .card__mystery-title {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 8rem; }
@@ -308,3 +332,13 @@ body {
   padding: 20rem 0;
   background-color: #f3f3f3;
   margin-top: -6rem; }
+
+.section-angels {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(0, 168, 146, 0.4)), url(../img/archangels_back.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: skewY(-3deg);
+  margin-top: -4rem; }
+  .section-angels > * {
+    transform: skewY(3deg); }

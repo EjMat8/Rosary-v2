@@ -14,6 +14,29 @@
     <title>The Holy Rosary</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-checkbox" />
+      <label for="nav-checkbox" class="navigation__button">TEST</label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Rosary Center</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">The Apostle's Creed</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Reflections</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Oratio Imperata</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -218,7 +241,16 @@
         </div>
         <div class="row">
           <div class="angel-pray">
-            <div class="col-1-of-2">
+            <div class="angel-pray__left">
+              <div class="angel-pray__image-box">
+                <img
+                  src="img/michael.png"
+                  alt="st. michael"
+                  class="angel-pray__image"
+                />
+              </div>
+            </div>
+            <div class="angel-pray__right">
               <div class="angel-pray__text-box">
                 <h3 class="heading-tertiary">Prayer to St.Michael</h3>
                 <p class="angel-pray__paragraph">
@@ -231,20 +263,20 @@
                 </p>
               </div>
             </div>
-            <div class="col-1-of-2">
+          </div>
+        </div>
+        <div class="row">
+          <div class="angel-pray">
+            <div class="angel-pray__left">
               <div class="angel-pray__image-box">
                 <img
-                  src="img/michael.png"
+                  src="img/raphael.jpg  "
                   alt="st. michael"
                   class="angel-pray__image"
                 />
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="angel-pray">
-            <div class="col-1-of-2">
+            <div class="angel-pray__right">
               <div class="angel-pray__text-box">
                 <h3 class="heading-tertiary">Prayer to St.Raphael</h3>
                 <p class="angel-pray__paragraph">
@@ -260,15 +292,6 @@
                   here) and the great grace of purity to prepare me to be the
                   temple of the Holy Spirit. Amen.
                 </p>
-              </div>
-            </div>
-            <div class="col-1-of-2">
-              <div class="angel-pray__image-box">
-                <img
-                  src="img/raphael.jpg  "
-                  alt="st. michael"
-                  class="angel-pray__image"
-                />
               </div>
             </div>
           </div>

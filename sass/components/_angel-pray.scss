@@ -1,23 +1,37 @@
 .angel-pray {
-  width: 90%;
+  width: 80%;
   background-image: $gradient-default;
   border-radius: 3px;
   box-shadow: 0.3rem 1rem 2rem rgba($color-black, 0.3);
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  display: table;
 
   &__image-box {
-    height: 50rem;
+    width: 100%;
   }
   &__image {
     width: 100%;
+    display: block;
   }
+
+  &__left {
+    width: 50%;
+    display: table-cell;
+  }
+  &__right {
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    // padding: 3rem 5rem;
+  }
+
   &__text-box {
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    padding: 1.7rem 0;
+    padding: 2rem 0;
   }
 
   &__paragraph {

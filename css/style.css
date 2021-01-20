@@ -104,6 +104,10 @@ body {
 .u-width-max {
   width: 100% !important; }
 
+.u-hidden {
+  opacity: 0;
+  visibility: hidden; }
+
 .angel-pray {
   width: 80%;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(0, 168, 146, 0.4));
@@ -267,6 +271,48 @@ body {
   .card--last {
     width: 63%; }
 
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 3000;
+  transition: all 0.3s; }
+  .modal__content {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5rem 7rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0rem 1rem 2rem rgba(255, 255, 255, 0.2); }
+  .modal__text {
+    border: 1px solid #5c2610;
+    border-radius: 3px;
+    padding: 4rem;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.7rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .modal__close {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    transition: all 0.2s;
+    cursor: pointer; }
+    .modal__close:hover {
+      color: #5c2610;
+      transform: scale(1.5); }
+
 .prayer-cont {
   width: 60%;
   margin: 0 auto;
@@ -354,6 +400,115 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  display: inline-block;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  height: 7rem;
+  width: 7rem;
+  background-color: #fff;
+  z-index: 2000;
+  border-radius: 50%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.navigation__background {
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  height: 6rem;
+  width: 6rem;
+  background-image: radial-gradient(#cb683d, #803e22);
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+
+.navigation__list {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 300;
+  display: inline-block;
+  transition: all 0.4s ease-out;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%; }
+
+.navigation__link:hover {
+  background-position: 100%;
+  color: #5c2610;
+  transform: translateX(2rem); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__icon {
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 3.4rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    height: 2px;
+    width: 3rem;
+    display: inline-block;
+    background-color: #333;
+    transition: all 0.2s; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0; }
+  .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
 
 .section-creed {
   padding: 15rem 0;

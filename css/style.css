@@ -224,16 +224,6 @@ body {
     .card__side--front {
       background-size: cover;
       background-position: center; }
-      .card__side--front--1 {
-        background-image: url(../img/mystery_test.jpg); }
-      .card__side--front--2 {
-        background-image: url(../img/mystery_test-2.jpg); }
-      .card__side--front--3 {
-        background-image: url(../img/mystery_test-3.jpg); }
-      .card__side--front--4 {
-        background-image: url(../img/mystery_test-4.jpg); }
-      .card__side--front--5 {
-        background-image: url(../img/mystery_test-5.jpg); }
     .card__side--back {
       transform: rotateY(180deg);
       background-image: linear-gradient(to right bottom, #cb683d, #803e22); }

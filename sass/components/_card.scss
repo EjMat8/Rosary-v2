@@ -17,21 +17,6 @@
     &--front {
       background-size: cover;
       background-position: center;
-      &--1 {
-        background-image: url(../img/mystery_test.jpg);
-      }
-      &--2 {
-        background-image: url(../img/mystery_test-2.jpg);
-      }
-      &--3 {
-        background-image: url(../img/mystery_test-3.jpg);
-      }
-      &--4 {
-        background-image: url(../img/mystery_test-4.jpg);
-      }
-      &--5 {
-        background-image: url(../img/mystery_test-5.jpg);
-      }
     }
     &--back {
       transform: rotateY(180deg);

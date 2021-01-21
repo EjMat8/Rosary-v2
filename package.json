@@ -2,9 +2,11 @@
   "name": "rosary-v2",
   "version": "1.0.0",
   "description": "source for family home prayers",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist/dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/EjMat8/Rosary-v2#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "regenerator-runtime": "^0.13.7"
   }
 }

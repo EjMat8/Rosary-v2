@@ -25,19 +25,32 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Rosary Center</a>
+            <a
+              href="#"
+              class="navigation__link nav__center"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rosary Center</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">The Apostle's Creed</a>
+            <a href="#section-1" class="navigation__link"
+              >The Apostle's Creed</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Reflections</a>
+            <a href="#section-2" class="navigation__link">Reflections</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Archangel Prayers</a>
+            <a href="#section-3" class="navigation__link"
+              >Prayers After Rosary</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Oratio Imperata</a>
+            <a href="#section-4" class="navigation__link">Archangel Prayers</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#section-5" class="navigation__link">Oratio Imperata</a>
           </li>
         </ul>
       </nav>
@@ -54,7 +67,7 @@
       </div>
     </header>
     <main>
-      <section class="section-creed">
+      <section class="section-creed" id="section-1">
         <div class="u-center-text u-margin-bottom-medium">
           <h2 class="heading-secondary">The Apostle's Creed</h2>
         </div>
@@ -83,7 +96,7 @@
         </div>
       </section>
 
-      <section class="section-mystery">
+      <section class="section-mystery" id="section-2">
         <div class="row">
           <div class="col-1-of-3">
             <div class="card">
@@ -99,7 +112,9 @@
                   <h4 class="card__mystery-title card__mystery-title--1">
                     The Resurrection
                   </h4>
-                  <a href="#" class="btn btn--primary">Read Reflection</a>
+                  <a href="#" class="btn btn--primary" data-num="0"
+                    >Read Reflection</a
+                  >
                 </div>
               </div>
             </div>
@@ -118,7 +133,9 @@
                   <h4 class="card__mystery-title card__mystery-title--2">
                     The Resurrection
                   </h4>
-                  <a href="#" class="btn btn--primary">Read Reflection</a>
+                  <a href="#" class="btn btn--primary" data-num="1"
+                    >Read Reflection</a
+                  >
                 </div>
               </div>
             </div>
@@ -137,7 +154,9 @@
                   <h4 class="card__mystery-title card__mystery-title--3">
                     The Resurrection
                   </h4>
-                  <a href="#" class="btn btn--primary">Read Reflection</a>
+                  <a href="#" class="btn btn--primary" data-num="2"
+                    >Read Reflection</a
+                  >
                 </div>
               </div>
             </div>
@@ -159,7 +178,9 @@
                   <h4 class="card__mystery-title card__mystery-title--4">
                     The Resurrection
                   </h4>
-                  <a href="#" class="btn btn--primary">Read Reflection</a>
+                  <a href="#" class="btn btn--primary" data-num="3"
+                    >Read Reflection</a
+                  >
                 </div>
               </div>
             </div>
@@ -178,7 +199,9 @@
                   <h4 class="card__mystery-title card__mystery-title--5">
                     The Resurrection
                   </h4>
-                  <a href="#" class="btn btn--primary">Read Reflection</a>
+                  <a href="#" class="btn btn--primary" data-num="4"
+                    >Read Reflection</a
+                  >
                 </div>
               </div>
             </div>
@@ -186,7 +209,7 @@
         </div>
       </section>
 
-      <section class="section-end-prayer">
+      <section class="section-end-prayer" id="section-3">
         <div class="u-center-text u-margin-bottom-medium">
           <h2 class="heading-secondary">Prayers after Rosary</h2>
         </div>
@@ -236,13 +259,19 @@
                 for the economy and employment. Mother of God and our Mother,
                 pray for us to God, the Father of ...
               </p>
-              <a href="#" class="btn-text">Read more &rarr;</a>
+              <a
+                href="http://www.vatican.va/content/francesco/en/prayers/documents/papa-francesco_preghiere_20200425_preghiera-mariana-maggio.html"
+                class="btn-text"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read more &rarr;</a
+              >
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-angels">
+      <section class="section-angels" id="section-4">
         <div class="u-center-text u-margin-bottom-medium">
           <h2 class="heading-secondary">Prayer to the Archangels</h2>
         </div>
@@ -304,7 +333,7 @@
           </div>
         </div>
       </section>
-      <section class="section-oratio">
+      <section class="section-oratio" id="section-5">
         <div class="u-center-text u-margin-bottom-medium">
           <h2 class="heading-secondary">Oratio Imperata</h2>
         </div>
@@ -356,16 +385,19 @@
 
     <div class="modal u-hidden">
       <div class="modal__content">
-        <button class="modal__close">&#x2715;</button>
-        <h2 class="heading-secondary u-margin-bottom-medium">Lorem Ipsum</h2>
+        <!-- <button class="modal__close">&#x2715;</button> -->
+        <!-- <h2 class="heading-secondary u-margin-bottom-medium modal__heading">
+          Lorem Ipsum
+        </h2>
         <p class="modal__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
           dignissimos fugiat eius in iure officiis ab consequatur? Molestiae
           iste sunt officia enim deleniti non natus eius iusto. Explicabo,
           ducimus nisi.
-        </p>
+        </p> -->
       </div>
     </div>
+    <div class="overlay u-hidden"></div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">Col 1 of 2</div>

@@ -78,6 +78,11 @@ document.querySelectorAll('.card__side--front').forEach(function (_, i) {
     `.card__side--front--${i + 1}`
   ).style.backgroundImage = `url('${model.state.mystery.mystPics[i]}')`;
 });
+const section1 = document.querySelector('#section-1');
+document.querySelector('.header__btn').addEventListener('click', function (e) {
+  e.preventDefault();
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
 // // url('img/url(${model.state.mystery.myst
 // //   .split(" ")[0]
 // //   .toLowerCase()}-${i + 1})')

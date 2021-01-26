@@ -224,6 +224,16 @@ body {
     .card__side--front {
       background-size: cover;
       background-position: center; }
+      .card__side--front--1 {
+        background-color: none; }
+      .card__side--front--2 {
+        background-color: none; }
+      .card__side--front--3 {
+        background-color: none; }
+      .card__side--front--4 {
+        background-color: none; }
+      .card__side--front--5 {
+        background-color: none; }
     .card__side--back {
       transform: rotateY(180deg);
       background-image: linear-gradient(to right bottom, #cb683d, #803e22); }
@@ -251,7 +261,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 80%; }
   .card__mystery-title {
     font-size: 3rem;
     font-weight: 400;

@@ -24,7 +24,7 @@ import joyful_5 from 'url:../img/joyful-5.jpg';
 
 const glorious = {
   id: [0, 3],
-  days: ['Sunday', 'Monday'],
+  days: ['Sunday', 'Wednesday'],
   mystery: 'Glorious Mystery',
   mysteryNames: [
     'The Resurrection',

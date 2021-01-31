@@ -53,6 +53,7 @@ function close() {
 
 const rosCenter = document.querySelector('.nav__center');
 const mysteryToday = model.state.mystery.myst.split(' ')[0].toLowerCase();
+const checkBox = document.querySelector('.navigation__checkbox');
 rosCenter.setAttribute(
   'href',
   `https://www.rosarycenter.org/homepage-2/rosary/how-to-pray-the-rosary/${
@@ -66,7 +67,7 @@ navLinks.addEventListener('click', e => {
   if (!e.target.closest('.navigation__link')) return;
 
   const id = e.target.getAttribute('href');
-
+  checkBox.checked = false;
   if (id.includes('#section')) {
     e.preventDefault();
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });

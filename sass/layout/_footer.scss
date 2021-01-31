@@ -2,12 +2,18 @@
   background-color: $color-grey-footer;
   padding: 5rem 0;
   font-size: 1.7rem;
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
   &__navigation {
     text-align: center;
     padding: 3rem 0;
     width: 50%;
     margin: 0 auto;
     border-bottom: 1px solid $color-grey-dark-2;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
   &__list {
     list-style: none;

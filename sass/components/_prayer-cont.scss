@@ -7,11 +7,20 @@
   border-radius: 5px;
   box-shadow: 0rem 0.5rem 1rem rgba($color-black, 0.2);
   padding: 3rem;
-
+  @include respond(tab-port) {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  // @include respond(phone) {
+  //   width: 85%;
+  // }
   &__icon {
     font-size: 10rem;
     color: $color-primary;
     display: block;
+    @include respond(tab-port) {
+      font-size: 7rem;
+    }
   }
 
   &__text {
@@ -19,5 +28,8 @@
     color: $color-grey-dark-3;
     line-height: 1.9;
     word-spacing: 1px;
+    @include respond(tab-port) {
+      line-height: 1.7;
+    }
   }
 }

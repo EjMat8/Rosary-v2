@@ -35,14 +35,26 @@ dark:#1c6a9e
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-size: 1.6rem;
-  font-family: "Lato", serif;
+  font-family: 'Lato', serif;
   font-weight: 400;
   line-height: 1.5;
   color: #777777; }
@@ -57,11 +69,19 @@ body {
     display: block;
     font-size: 7.3rem;
     animation: moveInLeft 1.2s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 5.8rem;
+        line-height: 1.3; } }
   .heading-primary--sub {
     font-weight: 300;
     display: block;
     font-size: 3rem;
     animation: moveInRight 1.2s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        font-size: 2rem;
+        line-height: 1.3; } }
 
 .heading-secondary {
   display: inline-block;
@@ -75,6 +95,11 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.2s; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      word-spacing: 0; } }
   .heading-secondary:hover {
     transform: translateY(-4px) scale(1.05);
     text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
@@ -115,7 +140,6 @@ body {
   box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
   display: table; }
   .angel-pray__image-box {
     width: 100%; }
@@ -140,6 +164,32 @@ body {
     color: #333;
     line-height: 1.8;
     font-weight: 700; }
+  @media only screen and (max-width: 56.25em) {
+    .angel-pray {
+      width: 100%;
+      display: block; }
+      .angel-pray__image-box {
+        width: 100%;
+        padding-top: 3rem; }
+      .angel-pray__image {
+        width: 100%;
+        display: inline-block;
+        padding: 0.5rem;
+        border: 0.5rem solid #cb683d;
+        border-radius: 3px; }
+      .angel-pray__left {
+        height: 50%;
+        display: block;
+        margin: 0 auto; }
+      .angel-pray__right {
+        width: 100%;
+        display: block;
+        vertical-align: none; }
+      .angel-pray__text-box {
+        width: 80%;
+        padding: 2rem 0; }
+      .angel-pray__paragraph {
+        line-height: 1.7; } }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -273,6 +323,30 @@ body {
   .card--last {
     width: 63%; }
 
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    background-color: #cb683d;
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    overflow: hidden; }
+    .card__side {
+      position: relative;
+      top: 0;
+      box-shadow: none;
+      border-radius: 0; }
+      .card__side--back {
+        transform: rotateY(0);
+        height: 25rem; }
+    .card:hover .card__side--front {
+      transform: rotateY(0); }
+    .card:hover .card__side--back {
+      transform: rotateY(0); }
+    .card__mystery-title {
+      margin-bottom: 3rem; }
+    .card--last {
+      width: 100%; } }
+
 .modal {
   height: 100vh;
   width: 100%;
@@ -293,6 +367,10 @@ body {
     text-align: center;
     border-radius: 4px;
     box-shadow: 0rem 1rem 2rem rgba(255, 255, 255, 0.2); }
+    @media only screen and (max-width: 37.5em) {
+      .modal__content {
+        padding: 5rem 0;
+        width: 85%; } }
   .modal__text {
     border: 1px solid #5c2610;
     border-radius: 3px;
@@ -314,6 +392,10 @@ body {
     .modal__close:hover {
       color: #5c2610;
       transform: scale(1.5); }
+    @media only screen and (max-width: 37.5em) {
+      .modal__close {
+        top: 1rem;
+        right: 1rem; } }
 
 .prayer-cont {
   width: 60%;
@@ -323,26 +405,42 @@ body {
   border-radius: 5px;
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .prayer-cont {
+      width: 80%;
+      padding: 1.5rem; } }
   .prayer-cont__icon {
     font-size: 10rem;
     color: #5c2610;
     display: block; }
+    @media only screen and (max-width: 56.25em) {
+      .prayer-cont__icon {
+        font-size: 7rem; } }
   .prayer-cont__text {
     font-size: 1.7rem;
     color: #333;
     line-height: 1.9;
     word-spacing: 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .prayer-cont__text {
+        line-height: 1.7; } }
 
 .footer {
   background-color: #474747;
   padding: 5rem 0;
   font-size: 1.7rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 2rem 0; } }
   .footer__navigation {
     text-align: center;
     padding: 3rem 0;
     width: 50%;
     margin: 0 auto;
     border-bottom: 1px solid #999; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -369,14 +467,28 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 52rem;
+      padding: 0 3rem; } }
   .row::after {
-    content: "";
+    content: '';
     clear: both;
     display: table; }
-  .row [class^="col-"] {
+  .row [class^='col-'] {
     float: left; }
-    .row [class^="col-"]:not(:last-child) {
+    .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^='col-']:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^='col-'] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -418,6 +530,14 @@ body {
   border-radius: 50%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   cursor: pointer; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__button {
+      top: 4rem;
+      right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .navigation__background {
   position: fixed;
@@ -429,6 +549,14 @@ body {
   border-radius: 50%;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1); }
+  @media only screen and (max-width: 56.25em) {
+    .navigation__background {
+      top: 4.5rem;
+      right: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__background {
+      top: 3.5rem;
+      right: 3.5rem; } }
 
 .navigation__nav {
   height: 100vh;
@@ -438,6 +566,7 @@ body {
   left: 0;
   z-index: 1500;
   opacity: 0;
+  visibility: hidden;
   transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
 
 .navigation__list {
@@ -471,6 +600,7 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  visibility: visible;
   width: 100%; }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -487,7 +617,7 @@ body {
     background-color: #333;
     transition: all 0.2s; }
   .navigation__icon::before, .navigation__icon::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0; }
   .navigation__icon::before {
@@ -515,6 +645,12 @@ body {
 .section-creed {
   padding: 15rem 0;
   background-color: #f3f3f3; }
+  @media only screen and (max-width: 56.25em) {
+    .section-creed {
+      padding: 9rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-creed {
+      padding: 6rem 0; } }
 
 .section-mystery {
   padding: 15rem 0;
@@ -525,11 +661,29 @@ body {
   margin-top: -4rem; }
   .section-mystery > * {
     transform: skewY(3deg); }
+    @media only screen and (max-width: 37.5em) {
+      .section-mystery > * {
+        transform: skewY(0); } }
+  @media only screen and (max-width: 56.25em) {
+    .section-mystery {
+      padding: 9rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-mystery {
+      transform: skewY(0);
+      margin-top: 0; } }
 
 .section-end-prayer {
   padding: 20rem 0;
   background-color: #f3f3f3;
   margin-top: -6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-end-prayer {
+      padding: 10rem 0;
+      margin-top: -4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-end-prayer {
+      padding: 8rem 0;
+      margin-top: 0; } }
 
 .section-angels {
   padding: 15rem 0;
@@ -540,8 +694,27 @@ body {
   margin-top: -4rem; }
   .section-angels > * {
     transform: skewY(3deg); }
+    @media only screen and (max-width: 37.5em) {
+      .section-angels > * {
+        transform: skewY(0); } }
+  @media only screen and (max-width: 56.25em) {
+    .section-angels {
+      margin-top: -3rem;
+      padding: 8rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-angels {
+      transform: skewY(0);
+      margin-top: 0; } }
 
 .section-oratio {
   padding: 20rem 0;
   background-color: #f3f3f3;
   margin-top: -4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-oratio {
+      padding: 9.5rem 0;
+      margin-top: -3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-oratio {
+      padding: 8rem 0;
+      margin-top: 0; } }

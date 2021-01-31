@@ -93,3 +93,35 @@
     width: 63%;
   }
 }
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+  .card {
+    height: auto;
+    background-color: $color-primary-light;
+    box-shadow: 0rem 1rem 2rem rgba($color-black, 0.6);
+    border-radius: 5px;
+    overflow: hidden;
+    &__side {
+      position: relative;
+      top: 0;
+      box-shadow: none;
+      border-radius: 0;
+      &--back {
+        transform: rotateY(0);
+        height: 25rem;
+      }
+    }
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+    &:hover &__side--back {
+      transform: rotateY(0);
+    }
+
+    &__mystery-title {
+      margin-bottom: 3rem;
+    }
+    &--last {
+      width: 100%;
+    }
+  }
+}

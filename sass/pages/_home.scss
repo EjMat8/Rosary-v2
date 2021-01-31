@@ -1,6 +1,12 @@
 .section-creed {
   padding: 15rem 0;
   background-color: $color-grey-light-1;
+  @include respond(tab-port) {
+    padding: 9rem 0;
+  }
+  @include respond(phone) {
+    padding: 6rem 0;
+  }
 }
 .section-mystery {
   padding: 15rem 0;
@@ -15,13 +21,31 @@
   transform: skewY(-3deg);
   & > * {
     transform: skewY(3deg);
+    @include respond(phone) {
+      transform: skewY(0);
+    }
   }
   margin-top: -4rem;
+  @include respond(tab-port) {
+    padding: 9rem 0;
+  }
+  @include respond(phone) {
+    transform: skewY(0);
+    margin-top: 0;
+  }
 }
 .section-end-prayer {
   padding: 20rem 0;
   background-color: $color-grey-light-1;
   margin-top: -6rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+    margin-top: -4rem;
+  }
+  @include respond(phone) {
+    padding: 8rem 0;
+    margin-top: 0;
+  }
 }
 
 .section-angels {
@@ -39,10 +63,29 @@
 
   & > * {
     transform: skewY(3deg);
+    @include respond(phone) {
+      transform: skewY(0);
+    }
+  }
+  @include respond(tab-port) {
+    margin-top: -3rem;
+    padding: 8rem 0;
+  }
+  @include respond(phone) {
+    transform: skewY(0);
+    margin-top: 0;
   }
 }
 .section-oratio {
   padding: 20rem 0;
   background-color: $color-grey-light-1;
   margin-top: -4rem;
+  @include respond(tab-port) {
+    padding: 9.5rem 0;
+    margin-top: -3rem;
+  }
+  @include respond(phone) {
+    padding: 8rem 0;
+    margin-top: 0;
+  }
 }
